@@ -30,10 +30,10 @@ export const registry = {
         remoteName: 'nav',
         exposedModule: './web-components'
     }),
-    booking: () => loadRemoteModule({
+    shell: () => loadRemoteModule({
         type: 'script',
-        remoteEntry: 'http://localhost:3000/remoteEntry.js',
-        remoteName: 'booking',
-        exposedModule: './Module'
-    }).then(m => m.FlightsModule),
+        remoteEntry: 'http://localhost:5000/remoteEntry.js',
+        remoteName: 'shell',
+        exposedModule: './web-components'
+    })
 };

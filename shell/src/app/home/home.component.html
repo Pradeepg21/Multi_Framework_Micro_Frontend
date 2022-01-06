@@ -1,1 +1,41 @@
-<h1>Welcome!</h1>
+<main>
+    <h1>Welcome!</h1>
+
+    <div >
+        <div class="row">
+            <div class="col-md-12"></div>
+        </div>
+        <table>
+        <tr>
+            <td class="tdgap" *ngFor='let ulink of allApps'>
+                <button class=" tdgap cardboard not-mobile" (click)="buttonClick(ulink)">
+                    <div class="box">
+                        <div class="{{ulink}}-bg cardImg"><img src="assets/{{ulink}}.png"></div>
+                        <div class="outsidDetails cardDetails">
+                            <div class="child">
+                                <h4>{{ulink}}</h4>
+                            </div>
+
+                        </div>
+                    </div>
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td class="tdgap" *ngFor='let ulink of allApps2'>
+                <button class=" tdgap cardboard not-mobile" (click)="buttonClick(ulink)">
+                    <div class="box">
+                        <div class="{{ulink}}-bg cardImg"><img src="assets/{{ulink}}.png"></div>
+                        <div class="outsidDetails cardDetails">
+                            <div class="child">
+                                <h4>{{ulink}}</h4>
+                            </div>
+
+                        </div>
+                    </div>
+                </button>
+            </td>
+        </tr>
+    </table>
+    </div>
+</main>

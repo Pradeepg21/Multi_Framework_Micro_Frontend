@@ -1,0 +1,81 @@
+@import "~bootstrap/scss/bootstrap.scss";
+.cardboard {
+    padding-bottom: 30px;
+}
+
+.cardboard:focus, .cardboard:hover {
+    transform: scale(1.03);
+}
+.tdgap {
+    margin: 33px;
+}
+
+.cardIgm Img {
+    width: 1200px;
+}
+
+.cardIgm {
+    text-align: center;
+    width: 100%;
+    padding: 6% 0;
+    min-height: 140px;
+}
+
+.box:focus {
+    outline: -webkit-focus-ring-color auto 1px;
+}
+
+.box {
+    box-shadow: 10px 10px 5px #d7d7d7;
+    height: 10%;
+    background-color: #fff;
+    min-width: 245px;
+}
+
+.angular1-bg{
+    background-color: #778beb;
+}
+.angular2-bg{
+    background-color: #77c1eb;
+}
+
+.react1-bg{
+    background-color: #eb9277;
+}
+
+.react2-bg{
+    background-color: #74ccc8;
+}
+
+.tile-desc {
+    display: none;
+}
+
+.cardDetails {
+    text-align: left;
+    padding: 30px 25px 19px;
+    p {
+        font-size: 0.9rem !important;
+    }
+}
+
+.box:hover {
+    .tile-desc {
+        display: block;
+        position: absolute;
+        top: 20px;
+        z-index: 1044;
+        font-size: 20px !important;
+        padding-right: 40px;
+        opacity: 1;
+        font-weight: 600;
+        
+    }
+    img {
+        -webkit-filter: blur(5px);
+        filter: blur(5px);
+    }
+    .cardIgm {
+        filter: brightness(145%);
+    }
+}
